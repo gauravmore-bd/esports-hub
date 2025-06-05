@@ -12,8 +12,6 @@ Installation
 Usage
 Future Improvements
 License
-📺 Demo
-Live Link (If hosted): Coming Soon or Add Netlify/Vercel/000WebHost link
 
 ✨ Features
 👤 User Features
@@ -31,6 +29,13 @@ Game-specific results for:
 BGMI: Squad vs Squad summary, MVPs
 Valorant: Round-wise kills, top fragger, agent picks
 Clash of Clans: Base destruction %, attack stars, best war attacker
+
 🛠️ Tech Stack
-| Category | Technology | |-------------|-------------------| | Frontend | HTML, CSS, JavaScript | | Backend | PHP | | Database | MySQL | | Dev Tools | Git, GitHub, Postman | | Hosting | 000WebHost, InfinityFree (or localhost) |
+ Category  Technology 
+ Frontend  HTML, CSS, JavaScript  
+ Backend  PHP 
+ Database  MySQL 
+ Dev Tools  Git, GitHub, Postman 
+ Hosting  000WebHost, InfinityFree (or localhost) 
+ 
 
