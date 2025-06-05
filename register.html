@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register - eSports Hub</title>
+    <link rel="stylesheet" href="Login.css">
+    <!-- Your Clash/BGMI/Valorant theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="auth-container">
+        <div class="auth-left">
+            <h1>eSports Hub</h1>
+            <h3>Welcome to the eSports Hub, champion!</h3>
+            <p>You’ve just taken your first step into a world of competition, camaraderie, and glory. Build your legacy, join epic tournaments, and rise through the ranks. The arena is ready — and now, so are you!</p>
+            <div class="socials">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-telegram"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+
+        <div class="auth-right">
+            <h2>Create Account</h2>
+            <form action="register.php" method="POST">
+                <div class="input-group">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <input type="submit" class="btn" value="Register">
+                <div class="switch-link">
+                    Already have an account? <a href="login.html">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

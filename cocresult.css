@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('tech.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.battle-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(15, 15, 15, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc00;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.battle-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.team {
+    width: 40%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+}
+
+.vs {
+    font-size: 26px;
+    font-weight: 600;
+    color: #ff5050;
+}
+
+.result-declare {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.winner {
+    color: #00ff9d;
+    font-weight: 600;
+}
+
+.player-table {
+    margin-top: 40px;
+}
+
+.player-table h2,
+.game-highlights h2 {
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+    background-color: rgba(255, 204, 0, 0.2);
+    color: #ffcc00;
+    font-weight: 600;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.mvp-row {
+    background-color: rgba(0, 255, 106, 0.15);
+    font-weight: bold;
+}
+
+.game-highlights {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+}
+
+.game-highlights ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.8;
+    font-size: 15px;
+    color: #e0e0e0;
+}

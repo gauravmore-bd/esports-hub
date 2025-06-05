@@ -1,0 +1,211 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('login_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+/* Profile Container */
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 8% 40px 8%;
+    background: linear-gradient(to right, rgba(28, 44, 87, 0.9), rgba(76, 67, 151, 0.9));
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Left Side - Text */
+
+.profile-text {
+    max-width: 65%;
+    z-index: 2;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #3c64f4;
+    padding: 6px 16px;
+    border-radius: 25px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.username {
+    font-size: 48px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.role {
+    font-size: 18px;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.hire-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff4c5b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hire-btn:hover {
+    background-color: #e84556;
+}
+
+
+/* Right Side - Floating Avatar */
+
+.profile-photo {
+    position: relative;
+    left: -30px;
+    top: -40px;
+    z-index: 2;
+    animation: float 4s ease-in-out infinite;
+}
+
+.profile-photo img {
+    width: 280px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 12px 60px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+}
+
+
+/* Float Animation */
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* Bottom Info Bar */
+
+.info-bar {
+    margin: -60px auto 40px auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 88%;
+    padding: 25px 50px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.info-item {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.info-item strong {
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.link {
+    text-decoration: none;
+    color: #a8d8ff;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.link:hover {
+    color: #ffffff;
+}
+
+
+/* User Stats Section */
+
+.user-stats {
+    margin: 60px auto;
+    max-width: 88%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 25px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.user-stats h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 25px 40px;
+    min-width: 200px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+.stat-card p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}

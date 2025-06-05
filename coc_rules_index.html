@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeIn">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>eSports</title>
+<link rel="stylesheet" href="coc_rules_style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <audio id="backgroundAudio" preload="auto"  autoplay loop>
+    <source src="bgmi1.mp3" type="audio/mp3">
+    </audio>
+  <header class="header">
+    <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="#">About</a>
+    <a href="#">Service</a>
+    <a href="#">Contact</a>
+    </nav> 
+    </header>
+<div id='hero'>
+  <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
+  <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
+  <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
+  <div class='layer-3 layer' data-depth='0.80' data-type='parallax'></div>
+  <div class='layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
+  <div class='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
+</div>
+<div id='hero-mobile'></div>
+<div id='content'>
+  <div class='container'>
+    <section class='first-section'>
+      <div class='row'>
+        <div class='col-sm-6'>
+          <h1>[ Rules and Regulations ]</h1>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm-6'>
+        <p>1)All tournaments must be free to enter for the players—no exceptions! This includes things like membership fees or season passes. That said, if you host a live event, you may charge entry fees from the spectators to enter the venue itself, but not to compete. You must refund the spectator fee to anyone who chooses to compete.</p>
+        <p>2)You are responsible for providing all prizes for your event. You cannot ask players to fund prizes. The maximum combined value of all prizes offered as part of your event can be 50,000 EUR. If you are looking for more, do contact us.</p>
+        <p>3)Supercell is in charge of its games but the hosts are in charge of their events. You can't say that an event is "official" or suggest that Supercell is involved with, responsible for, or endorses, your event or any prizes awarded.</p>
+        <p>4)As host, make sure your event is legal under applicable local law and regulations.
+        <p>5)Your event cannot involve gambling, raffles, or fantasy sports betting.</p>
+        <p>6)To host or play in an event, you must be old enough to compete or host per local regulations & requirements – it's the law! Additionally, participants must be at least 13 years of age to participate events, and with written or in-person consent from parent or legal guardian if not of legal age, for events with cash prizes.</p>
+        <p>7)Tournaments should be fun and engaging; skill must determine the winners. Any types of match-fixing and similar shady activities are strictly forbidden!</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+  <script  src="coc_rules_Script.js"></script>
+  <script>const audio = document.getElementById('backgroundAudio');
+    const audioKey = 'audioPlaybackPosition';
+    
+    // Store the current audio playback position in local storage
+    function storePlaybackPosition() {
+        localStorage.setItem(audioKey, audio.currentTime);
+    }
+    
+    // Restore the audio playback position from local storage
+    function restorePlaybackPosition() {
+        const savedPosition = localStorage.getItem(audioKey);
+        if (savedPosition) {
+            audio.currentTime = parseFloat(savedPosition);
+        }
+    }
+    
+    // Restore playback position when the page loads
+    window.addEventListener('load', () => {
+        restorePlaybackPosition();
+    });
+    
+    // Store playback position before leaving the page
+    window.addEventListener('beforeunload', () => {
+        storePlaybackPosition();
+    });
+    </script>
+</body>
+</html>

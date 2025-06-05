@@ -1,0 +1,94 @@
+/* Background and Reset */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('tech.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    overflow-x: hidden;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Header Section */
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ffd700;
+    text-shadow: 1px 1px 4px black;
+}
+
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.highlight {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 18px;
+    border: 1px solid #ffd700;
+    box-shadow: 0 0 8px #00000088;
+}
+
+
+/* Table Styling */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 15px #00000066;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #111;
+    color: #ffd700;
+    font-size: 20px;
+}
+
+th,
+td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+}
+
+td {
+    font-size: 18px;
+    font-weight: 500;
+}

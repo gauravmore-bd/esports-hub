@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Points Table Image</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Agency FB', Arial, sans-serif;
+    overflow: hidden;
+  }
+  @font-face {
+    font-family: 'Agency FB';
+    src: url('path-to-your-font-files/agencyfb-regular.ttf') format('truetype');
+    /* You might need to adjust the path to your font files and the format if necessary */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .image-container {
+    overflow: hidden;
+  }
+  img {
+    transform: translateY(0%);
+    height: 100%;
+    width: 100%;
+  }
+  .turi{
+      position: fixed;
+      top: 155px;
+      left: 187px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .tuript{
+      position: fixed;
+      top: 155px;
+      left: 407px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .alliance{
+      position: fixed;
+      top: 200px;
+      left: 187px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .alliancept{
+      position: fixed;
+      top: 200px;
+      left: 407px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    
+    .sharkboy{
+      position: fixed;
+      top: 305px;
+      left: 187px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .sharkboypt{
+      position: fixed;
+      top: 305px;
+      left: 407px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .nkuch{
+      position: fixed;
+      top: 350px;
+      left: 187px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .nkuchpt{
+      position: fixed;
+      top: 350px;
+      left: 407px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .dashr{
+      position: fixed;
+      top: 455px;
+      left: 187px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .dashrpt{
+      position: fixed;
+      top: 455px;
+      left: 407px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .nyte{
+      position: fixed;
+      top: 500px;
+      left: 187px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .nytept{
+      position: fixed;
+      top: 500px;
+      left: 407px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .lirik{
+      position: fixed;
+      top: 605px;
+      left: 187px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .lirikpt{
+      position: fixed;
+      top: 605px;
+      left: 407px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .faithion{
+      position: fixed;
+      top: 651px;
+      left: 187px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .faithionpt{
+      position: fixed;
+      top: 651px;
+      left: 407px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    /*semifinals*/
+    .alliance2{
+      position: fixed;
+      top: 230px;
+      left: 652px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .alliance2pt{
+      position: fixed;
+      top: 230px;
+      left: 877px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .sharkboy2{
+      position: fixed;
+      top: 275px;
+      left: 652px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .sharkboy2pt{
+      position: fixed;
+      top: 275px;
+      left: 877px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .dashr2{
+      position: fixed;
+      top: 530px;
+      left: 652px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .dashr2pt{
+      position: fixed;
+      top: 530px;
+      left: 877px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .lirik2{
+      position: fixed;
+      top: 577px;
+      left: 652px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .lirik2pt{
+      position: fixed;
+      top: 577px;
+      left: 877px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+     /*finals*/
+     .sharkboy3{
+      position: fixed;
+      top: 385px;
+      left: 1120px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .sharkboy3pt{
+      position: fixed;
+      top: 385px;
+      left: 1345px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+     .lirik3{
+      position: fixed;
+      top: 432px;
+      left: 1120px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .lirik3pt{
+      position: fixed;
+      top: 432px;
+      left: 1345px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+</style>
+</head>
+<body>
+  <audio id="backgroundAudio" preload="auto"  autoplay loop>
+    <source src="bgmi1.mp3" type="audio/mp3">
+    </audio>
+  <div class="image-container">
+    <img src="valotable.jpg" alt="Points Table">
+  </div>
+  <div class="turi" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>TURI</h1></div>
+  <div class="tuript" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>0</h1></div>
+
+  <div class="alliance" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>ALLIANCE</h1></div>
+  <div class="alliancept" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>0</h1></div>
+
+  <div class="sharkboy" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>SHARKBOY</h1></div>
+  <div class="sharkboypt" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>0</h1></div>
+
+
+  <div class="nkuch" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>NKUCH</h1></div>
+  <div class="nkuchpt" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>0</h1></div>
+
+
+  <div class="dashr" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>DASHR</h1></div>
+  <div class="dashrpt" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>0</h1></div>
+
+  <div class="nyte" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>NYTE</h1></div>
+  <div class="nytept" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>0</h1></div>
+
+  <div class="lirik" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>LIRIK</h1></div>
+  <div class="lirikpt" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>0</h1></div>
+
+  <div class="faithion" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>FAITHION</h1></div>
+  <div class="faithionpt" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>0</h1></div>
+
+<!--semifinals--> 
+  <div class="alliance2" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>ALLIANCE</h1></div>
+  <div class="alliance2pt" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>0</h1></div>
+
+  <div class="sharkboy2" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>SHARKBOY</h1></div>
+  <div class="sharkboy2pt" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>0</h1></div>
+
+  <div class="dashr2" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>DASHR</h1></div>
+  <div class="dashr2pt" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>0</h1></div>
+
+  <div class="lirik2" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>LIRIK</h1></div>
+  <div class="lirik2pt" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>0</h1></div>
+
+  <!--FInals-->
+  <div class="sharkboy3" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>SHARKBOY</h1></div>
+  <div class="sharkboy3pt" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>0</h1></div>
+
+  <div class="lirik3" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>LIRIK</h1></div>
+  <div class="lirik3pt" style="font-family: 'Agency FB', Arial, sans-serif;"><h1>0</h1></div>
+
+  <script>const audio = document.getElementById('backgroundAudio');
+    const audioKey = 'audioPlaybackPosition';
+    
+    // Store the current audio playback position in local storage
+    function storePlaybackPosition() {
+        localStorage.setItem(audioKey, audio.currentTime);
+    }
+    
+    // Restore the audio playback position from local storage
+    function restorePlaybackPosition() {
+        const savedPosition = localStorage.getItem(audioKey);
+        if (savedPosition) {
+            audio.currentTime = parseFloat(savedPosition);
+        }
+    }
+    
+    // Restore playback position when the page loads
+    window.addEventListener('load', () => {
+        restorePlaybackPosition();
+    });
+    
+    // Store playback position before leaving the page
+    window.addEventListener('beforeunload', () => {
+        storePlaybackPosition();
+    });
+    </script>
+</body>
+</html>

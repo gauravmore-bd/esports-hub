@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+}
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+    filter: blur(4px);
+  }
+._success {
+    transform: translateY(40%);
+    padding: 45px;
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+    
+}
+
+._success i {
+    font-size: 55px;
+    color: #28a745;
+}
+
+._success h2 {
+    margin-bottom: 12px;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+._success p {
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.home_page {
+    width: 40%;
+    height: auto;
+    padding: 8px 0px;
+    margin: 8px 0px;
+    border: none;
+    background-color: #00ff3796;
+    color: #000000;
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: 'Agency FB', Arial, sans-serif;
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.2);
+  }
+  /* Add animation to the checkmark icon */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animation to the checkmark icon */
+  .message-box._success .fa-check-circle {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  #drawing_canvas {
+    position: absolute;
+    margin: auto;
+    width: 912px;
+    height: 750px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+  

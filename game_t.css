@@ -1,0 +1,120 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Styles */
+
+body {
+    background: url('new_t.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+/* Section and Title */
+
+.games-section {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.section-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #f5f5f5;
+}
+
+
+/* Cards Container */
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+/* Individual Game Card (Slightly Bigger) */
+
+.game-card {
+    width: 260px;
+    /* increased from 240px */
+    height: 340px;
+    /* increased from 320px */
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Game Image Styles */
+
+.game-image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+
+/* Card Content */
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #c0c0c0;
+}
+
+.view-result-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00c7a8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.view-result-btn:hover {
+    background-color: #009e86;
+}
