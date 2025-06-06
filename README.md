@@ -84,7 +84,7 @@
 git clone https://github.com/your-username/esports-hub.git
 cd esports-hub
 ```
-###⚙️ Setup Database
+##⚙️ Setup Database
 Create a MySQL database named esports_hub (or your chosen name).
 Import the SQL schema located in database/schema.sql (or your schema file).
 
