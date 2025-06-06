@@ -84,11 +84,11 @@
 git clone https://github.com/your-username/esports-hub.git
 cd esports-hub
 ```
-##⚙️ Setup Database
+⚙️ Setup Database
 Create a MySQL database named esports_hub (or your chosen name).
 Import the SQL schema located in database/schema.sql (or your schema file).
 
-##🛠 Configure Database Connection
+🛠 Configure Database Connection
 Update the database configuration in config.php (or wherever your DB config is) with your credentials:
 ```bash
 <?php
@@ -98,20 +98,20 @@ define('DB_PASS', 'yourpassword');
 define('DB_NAME', 'esports_hub');
 ?>
 ```
-###📥 Start Development Server
+📥 Start Development Server
 You can run the project locally using XAMPP, WAMP, or any PHP-enabled web server:
 Place the project folder in the webserver root directory (e.g., htdocs for XAMPP).
 Start Apache and MySQL services.
 Access via browser: http://localhost/esports-hub
 
-###🖥️ How to Use
+🖥️ How to Use
 Register a new account or login.
 Update your profile with a photo and stats.
 Browse upcoming tournaments and register.
 View results and leaderboard for completed tournaments.
 Manage your participation and past matches.
 
-###📁 Folder Structure
+📁 Folder Structure
 ```bash
 esports-hub/
 │
@@ -126,22 +126,22 @@ esports-hub/
 └── .gitignore            # Git ignore rules  
 
 ```
-###🔧 Testing
+🔧 Testing
 Use the browser to navigate through features.
 Test user registration, tournament creation, joining, and results.
 
-###✨ Future Enhancements
+✨ Future Enhancements
 Add real-time match updates using WebSocket
 Integrate payment gateway for tournament fees
 Add player rankings and stats analytics
 Mobile app companion
 
-###🤝 Contributing
+🤝 Contributing
 Feel free to open issues or submit pull requests.
 
-###📄 License
+📄 License
 This project is licensed under the MIT License.
 
-###📬 Contact
+📬 Contact
 Created by Gaurav More
 📧 gauravmore33444@gmail.com
