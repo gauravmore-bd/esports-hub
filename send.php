@@ -89,7 +89,7 @@ try {
 
     //Recipients
     $mail->setFrom($email, $name);
-    $mail->addAddress('sutarsoham05@gmail.com', 'eSports');     //Add a recipient
+    $mail->addAddress('example123@gmail.com', 'eSports');     //Add a recipient
 
 
        //Optional name
