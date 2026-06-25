@@ -20,7 +20,7 @@
 ## 📺 Demo
 
 🌐 **Live Site**: _Coming Soon_  
-📽️ **Demo Video**: _Add YouTube or Drive link here_
+📽️ **Demo Video**:  _Coming Soon_  
 
 ---
 
